@@ -1,4 +1,4 @@
-# Clase que guarda metodos generales para interactuar con la aplicacion
+# Clase que guarda metodos generales para interactuar con la aplicación
 # 
 class BasePage
 
@@ -48,5 +48,17 @@ class BasePage
 
   def sleep(seconds)
     Kernel.sleep(seconds)
+  end
+
+  def click_element(locator, description)
+    clickable_element = find_element_with_retry(locator, description)
+    expect(clickable_element).not_to be_nil, "No se pudo encontrar el campo de búsqueda: " + description
+    tap_element.click
+  end
+
+  private
+
+  def expect(condition)
+    raise "Assertion failed" unless condition
   end
 end

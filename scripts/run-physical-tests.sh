@@ -73,7 +73,8 @@ fi
 echo "Ejecutando pruebas en dispositivo real..."
 echo "================================================"
 
-bundle exec cucumber features/search.feature
+bundle exec cucumber features/search_and_filters.feature
+
 TEST_RESULT=$?
 
 echo "================================================"
