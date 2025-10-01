@@ -1,0 +1,53 @@
+AllCops:
+  TargetRubyVersion: 2.4
+Metrics/LineLength:
+  Max: 128
+Metrics/MethodLength:
+  Enabled: false
+Metrics/ModuleLength:
+  Enabled: false
+Metrics/ClassLength:
+  Enabled: false
+Metrics/CyclomaticComplexity:
+  Enabled: false
+Metrics/PerceivedComplexity:
+  Enabled: false
+Metrics/AbcSize:
+  Enabled: false
+Metrics/BlockLength:
+  Enabled: false
+Style/Documentation:
+  Enabled: false
+Style/RegexpLiteral:
+  Enabled: false
+# blocked on https://github.com/appium/ruby_lib/issues/312. Already removed from core part
+Style/GlobalVars:
+  Enabled: false
+Style/PercentLiteralDelimiters:
+  Enabled: false
+Style/CommentedKeyword:
+  Enabled: false
+Naming/AccessorMethodName:
+  Enabled: false
+Naming/RescuedExceptionsVariableName:
+  Enabled: false
+Layout/HeredocIndentation:
+  Enabled: false
+Layout/RescueEnsureAlignment:
+  Enabled: false
+Layout/HashAlignment:
+  Enabled: false
+Style/ExplicitBlockArgument:
+  Enabled: false
+Style/OptionalBooleanParameter:
+  Enabled: false
+Naming/MethodParameterName:
+  Enabled: false
+Style/KeywordParametersOrder:
+  Enabled: false
+Style/AccessorGrouping:
+  Enabled: false
+Style/StringConcatenation:
+  Enabled: false
+Lint/NonDeterministicRequireOrder:
+  Enabled: false

@@ -1,0 +1,19 @@
+current directory: /home/antonio/Escritorio/test-ml-mobile-physical/vendor/bundle/ruby/3.2.0/gems/eventmachine-1.2.7/ext/fastfilereader
+/home/antonio/.rbenv/versions/3.2.5/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/antonio/Escritorio/test-ml-mobile-physical/vendor/bundle/ruby/3.2.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= sitearchdir\=./.gem.20250930-125795-z292g1 sitelibdir\=./.gem.20250930-125795-z292g1 clean
+
+current directory: /home/antonio/Escritorio/test-ml-mobile-physical/vendor/bundle/ruby/3.2.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= sitearchdir\=./.gem.20250930-125795-z292g1 sitelibdir\=./.gem.20250930-125795-z292g1
+compiling mapper.cpp
+compiling rubymain.cpp
+linking shared-object fastfilereaderext.so
+
+current directory: /home/antonio/Escritorio/test-ml-mobile-physical/vendor/bundle/ruby/3.2.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= sitearchdir\=./.gem.20250930-125795-z292g1 sitelibdir\=./.gem.20250930-125795-z292g1 install
+/usr/bin/install -c -m 0755 fastfilereaderext.so ./.gem.20250930-125795-z292g1
+
+current directory: /home/antonio/Escritorio/test-ml-mobile-physical/vendor/bundle/ruby/3.2.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= sitearchdir\=./.gem.20250930-125795-z292g1 sitelibdir\=./.gem.20250930-125795-z292g1 clean

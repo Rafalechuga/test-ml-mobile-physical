@@ -1,0 +1,58 @@
+AllCops:
+  TargetRubyVersion: 2.4
+Layout/LineLength:
+  Max: 128
+Layout/RescueEnsureAlignment:
+  Enabled: false
+Layout/EmptyLinesAroundAttributeAccessor:
+  Enabled: false
+Layout/EmptyLineBetweenDefs:
+  Enabled: false
+Layout/HashAlignment:
+  Enabled: false
+Metrics/MethodLength:
+  Enabled: false
+Metrics/ModuleLength:
+  Enabled: false
+Metrics/ClassLength:
+  Enabled: false
+Metrics/AbcSize:
+  Enabled: false
+Metrics/CyclomaticComplexity:
+  Max: 14
+Metrics/PerceivedComplexity:
+  Max: 14
+Metrics/ParameterLists:
+  Enabled: false
+Lint/NestedMethodDefinition:
+  Enabled: false
+Style/ZeroLengthPredicate:
+  Enabled: false
+Style/Documentation:
+  Enabled: false
+Style/CommentedKeyword:
+  Enabled: false
+Style/PercentLiteralDelimiters:
+  Enabled: false
+Style/SymbolArray:
+  Enabled: false
+Style/UnpackFirst:
+  Enabled: false
+Naming/AccessorMethodName:
+  Enabled: false
+Naming/MemoizedInstanceVariableName:
+  Enabled: true
+  Exclude:
+    - test/**/*
+Naming/RescuedExceptionsVariableName:
+  Enabled: false
+Style/CaseLikeIf:
+  Enabled: false
+Style/RedundantRegexpEscape:
+  Enabled: false
+Style/OptionalBooleanParameter:
+  Enabled: false
+Style/ExplicitBlockArgument:
+  Enabled: false
+Style/KeywordParametersOrder:
+  Enabled: false

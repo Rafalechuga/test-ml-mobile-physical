@@ -1,0 +1,12 @@
+{
+  "platformName": "Android",
+  "appium:platformVersion": "15",
+  "appium:deviceName": "SM_A155M",
+  "appium:automationName": "UiAutomator2",
+  "appium:appPackage": "com.mercadolibre",
+  "appium:appActivity": ".splash.SplashActivity",
+  "appium:udid": "RF8X10AAL8X",
+  "appium:noReset": false,
+  "appium:autoGrantPermissions": true,
+  "appium:newCommandTimeout": 300
+}

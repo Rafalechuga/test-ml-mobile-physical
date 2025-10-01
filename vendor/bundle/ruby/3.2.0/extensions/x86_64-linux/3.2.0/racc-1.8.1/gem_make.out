@@ -1,0 +1,18 @@
+current directory: /home/antonio/Escritorio/test-ml-mobile-physical/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+/home/antonio/.rbenv/versions/3.2.5/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/antonio/Escritorio/test-ml-mobile-physical/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250930-125795-vs5u0y sitelibdir\=./.gem.20250930-125795-vs5u0y clean
+
+current directory: /home/antonio/Escritorio/test-ml-mobile-physical/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250930-125795-vs5u0y sitelibdir\=./.gem.20250930-125795-vs5u0y
+compiling cparse.c
+linking shared-object racc/cparse.so
+
+current directory: /home/antonio/Escritorio/test-ml-mobile-physical/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250930-125795-vs5u0y sitelibdir\=./.gem.20250930-125795-vs5u0y install
+/usr/bin/install -c -m 0755 cparse.so ./.gem.20250930-125795-vs5u0y/racc
+
+current directory: /home/antonio/Escritorio/test-ml-mobile-physical/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250930-125795-vs5u0y sitelibdir\=./.gem.20250930-125795-vs5u0y clean

@@ -1,0 +1,15 @@
+# Ruby
+# Package your Ruby project.
+# Add steps that install rails, analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/ruby
+jobs:
+  - template: ./ci-jobs/functional_test.yml
+
+# Runs tests nightly to make sure they works against appium@beta
+schedules:
+  - cron: "0 0 * * *"
+    displayName: Daily Nightly build (UTC)
+    branches:
+      include:
+        - master
+    always: true
