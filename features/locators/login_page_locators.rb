@@ -3,7 +3,6 @@
 module LoginPageLocators
 
   BUTTON_CONTINUAR_COMO_VISITANTE = [
-    { xpath: '//android.widget.Button[contains(@text, "Buscar")]' },
     { id: 'com.mercadolibre:id/andes_button_text' },
     { xpath: '//android.widget.Button[contains(@text, "Continuar como visitante")]' },
     { xpath: '//android.widget.Button[contains(@text, "Continuar")]' },

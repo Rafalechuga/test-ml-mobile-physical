@@ -5,3 +5,6 @@ Feature: Validate a search flow and filter functionality in the Mercado Libre mo
     When I tap on the ContinuarComoInvitado button
     And I tap on the main search bar
     And I enter "playstation 5" in the search bar
+    Then I select NUEVO filter
+    Then I select "09430" CP filter
+    Then I select MAYOR PRECIO filter

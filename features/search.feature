@@ -16,3 +16,4 @@ Feature: Mercado Libre Search on Physical Device
     And I enter "laptop gamer" in the search field
     And I tap the search button
     Then I should see search results for "laptop gamer"
+    

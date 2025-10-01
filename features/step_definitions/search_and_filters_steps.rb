@@ -18,3 +18,18 @@ end
 When('I enter {string} in the search bar') do |term|
   @home_page.search(term)
 end
+
+When('I select NUEVO filter') do
+  @home_page.select_nuevo_filter()
+end
+
+When('I select {string} CP filter') do |cp|
+  @home_page.select_cp_filter(cp)
+end
+
+
+When('I select MAYOR PRECIO filter')  do
+  @home_page.select_expensive_filter()
+end
+
+
