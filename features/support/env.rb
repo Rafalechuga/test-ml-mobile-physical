@@ -2,12 +2,14 @@
 require 'appium_lib'
 require 'cucumber'
 require 'rspec'
+require 'rspec/expectations'
 
 # Cargar todos los archivos de pages y locators
 Dir[File.join(File.dirname(__FILE__), 'pages', '*.rb')].each { |file| require file }
 Dir[File.join(File.dirname(__FILE__), '..', 'locators', '*.rb')].each { |file| require file }
 
-# ... el resto de tu código actual de env.rb
+# Configuración de RSpec
+World(RSpec::Matchers)
 
 def caps
   {
