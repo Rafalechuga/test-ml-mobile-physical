@@ -95,15 +95,32 @@ end
   end
 
   def swipe(start_x, start_y, end_x, end_y, duration: 1000)
-  @driver.swipe(
-    start_x: start_x, 
-    start_y: start_y, 
-    end_x: end_x, 
-    end_y: end_y, 
-    duration: duration
-  )
-  sleep 2
-end
+    @driver.swipe(
+      start_x: start_x, 
+      start_y: start_y, 
+      end_x: end_x, 
+      end_y: end_y, 
+      duration: duration
+    )
+    sleep 2
+  end
+
+  def take_screenshot(file_name = nil)
+    Dir.mkdir('evidencia') unless Dir.exist?('evidencia')
+
+    timestamp = Time.now.strftime('%Y%m%d_%H%M%S')
+    file_name ||= "screenshot_#{timestamp}.png"
+    file_path = File.join('evidencia', file_name)
+
+    # Tomar screenshot usando Appium driver
+    @driver.screenshot(file_path)
+    puts "Captura guardada en: #{file_path}"
+
+    file_path
+    rescue => e
+      puts "Error al tomar screenshot: #{e.message}"
+      nil
+    end
 
   def wait_for_element(timeout: 30)
     Selenium::WebDriver::Wait.new(timeout: timeout)
@@ -112,4 +129,5 @@ end
   def sleep(seconds)
     Kernel.sleep(seconds)
   end
+  
 end

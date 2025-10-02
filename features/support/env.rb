@@ -14,25 +14,25 @@ World(RSpec::Matchers)
 def caps
   {
     platformName: 'Android',
-    platformVersion: '15',
-    deviceName: 'SM_A155M',
+    platformVersion: ENV['PLATFORM_VERSION'] || '15',
+    deviceName: ENV['DEVICE_NAME'] || 'SM_A155M',
     automationName: 'UiAutomator2',
-    appPackage: 'com.mercadolibre',
-    appActivity: '.splash.SplashActivity',  # ¡ACTIVIDAD CORRECTA!
+    appPackage: ENV['APP_PACKAGE'] || 'com.mercadolibre',
+    appActivity: ENV['APP_ACTIVITY'] || '.splash.SplashActivity',
     noReset: false,
     fullReset: false,
     autoGrantPermissions: true,
     newCommandTimeout: 60,
-    udid: 'RF8X10AAL8X',
-    systemPort: 8200,
+    udid: ENV['DEVICE_UDID'] || 'RF8X10AAL8X',
+    systemPort: ENV['SYSTEM_PORT'] || 8200,
     uiautomator2ServerLaunchTimeout: 60000,
-    # Configuraciones adicionales para mejor rendimiento
     disableWindowAnimation: true,
     skipUnlock: true,
     ignoreHiddenApiPolicyError: true,
     enforceAppInstall: false
   }
 end
+
 
 # Inicializar driver
 $driver = Appium::Driver.new({ caps: caps, appium_lib: { wait: 30 } }, true)
